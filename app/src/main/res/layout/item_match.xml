@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/ivPetImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/husky" />
+
+    <TextView
+        android:id="@+id/tvPetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breed"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age: 3 years"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvVaccinated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vaccinated: Yes"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnViewDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View Details"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDeleteMatch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete Match"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
